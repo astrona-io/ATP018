@@ -9,11 +9,11 @@ off.
 | Stage | Domain | Weight | Content | Status |
 | --- | --- | --- | --- | --- |
 | STG001 | Fundamentals & Getting Started | 10 % | [ATS088](https://github.com/astrona-io/ATS088) | Draft, written, not yet run |
-| STG002 | Realm Administration & Identity Management | 20 % | ATS089 | Planned |
-| STG003 | Securing Applications & Services | 25 % | ATS090 | Planned |
-| STG004 | Fine-Grained Authorization Services | 15 % | ATS091 | Planned |
-| STG005 | Keycloak Development & SPI Customization | 15 % | ATS092 | Planned |
-| STG006 | Production Operations, Security & Kubernetes | 15 % | ATS093 | Planned |
+| STG002 | Realm Administration & Identity Management | 20 % | [ATS089](https://github.com/astrona-io/ATS089) | Draft, written, not yet run |
+| STG003 | Securing Applications & Services | 25 % | [ATS090](https://github.com/astrona-io/ATS090) | Draft, written, not yet run |
+| STG004 | Fine-Grained Authorization Services | 15 % | [ATS091](https://github.com/astrona-io/ATS091) | Draft, written, not yet run |
+| STG005 | Keycloak Development & SPI Customization | 15 % | [ATS092](https://github.com/astrona-io/ATS092) | Draft, written, not yet run |
+| STG006 | Production Operations, Security & Kubernetes | 15 % | [ATS093](https://github.com/astrona-io/ATS093) | Draft, written, not yet run |
 
 The site picks it up through [astrona-content](https://github.com/astrona-io/astrona-content):
 a file in `courses/` that points at this repository, and the content sync
