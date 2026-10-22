@@ -1,0 +1,117 @@
+apiVersion: content.astrona.io/v1alpha1
+kind: TrainingPath
+metadata:
+  id: ATP018
+  slug: keycloak
+  title: "Keycloak"
+  description: >-
+    The Keycloak track: one course per domain — fundamentals, realm
+    administration and identity management, securing applications,
+    fine-grained authorization, extending Keycloak with service provider
+    interfaces, and running Keycloak in production on Kubernetes — with
+    readings, ungraded playgrounds and graded hands-on labs that run on your
+    own computer with the Astrona CLI.
+  version: "0.1.0"
+  language: "en"
+  maturity: draft
+  authors:
+    - name: "Paris Nakita Kejser"
+      email: "paris@astrona.io"
+      company: "Astrona.io"
+  tags:
+    - "Keycloak"
+    - "Identity and Access Management"
+    - "OpenID Connect"
+    - "OAuth 2.0"
+    - "CNCF"
+  license: "Apache-2.0"
+
+spec:
+  audience: "Kubernetes and platform engineers who run Keycloak or secure applications with it."
+  difficulty: "Intermediate"
+
+  # There is no official Keycloak certification exam. The domains and their
+  # weights below are Astrona's own.
+  examPreparation:
+    enabled: false
+
+  prerequisites:
+    - "Working knowledge of Kubernetes: pods, deployments, services, secrets and kubectl."
+    - "Comfort with HTTP, curl and JSON."
+    - "A computer that can run the Astrona CLI with Docker or Podman, for the labs."
+
+  learningOutcomes:
+    - "Explain OAuth 2.0, OpenID Connect and SAML 2.0, and read the tokens Keycloak issues."
+    - "Administer realms, users, roles, multi-factor authentication and user federation."
+    - "Secure single-page applications and APIs with the authorization code flow with PKCE and token validation."
+    - "Build fine-grained, policy-based authorization with Keycloak Authorization Services."
+    - "Extend Keycloak with custom authenticators, event listeners and themes."
+    - "Run Keycloak in production on Kubernetes with the Keycloak Operator, a database and distributed caching."
+
+  # One stage per domain. Weights follow the path's own domain plan.
+  stages:
+    - id: "ATP018-STG001"
+      title: "Fundamentals & Getting Started"
+      description: "Identity protocols and Keycloak's place in the CNCF landscape, the master realm against application realms, the container image, production mode, PostgreSQL and realm import."
+      weight: 10
+      maturity: draft
+      content:
+        - ref: ATS088
+          repository: "https://github.com/astrona-io/ATS088"
+          path: "."
+          version: "0.1.0"
+
+    - id: "ATP018-STG002"
+      title: "Realm Administration & Identity Management"
+      description: "User lifecycle, composite roles, multi-factor authentication and passkeys, LDAP and Active Directory federation, and the User Storage SPI."
+      weight: 20
+      maturity: draft
+      content:
+        - ref: ATS089
+          repository: "https://github.com/astrona-io/ATS089"
+          path: "."
+          version: "0.1.0"
+
+    - id: "ATP018-STG003"
+      title: "Securing Applications & Services"
+      description: "The authorization code flow with PKCE, JWT validation, public and confidential clients, CORS and web origins, and token propagation through an API gateway."
+      weight: 25
+      maturity: draft
+      content:
+        - ref: ATS090
+          repository: "https://github.com/astrona-io/ATS090"
+          path: "."
+          version: "0.1.0"
+
+    - id: "ATP018-STG004"
+      title: "Fine-Grained Authorization Services"
+      description: "Resource servers, scopes, UMA 2.0, policy enforcement points, and policy-based against role-based access control."
+      weight: 15
+      maturity: draft
+      content:
+        - ref: ATS091
+          repository: "https://github.com/astrona-io/ATS091"
+          path: "."
+          version: "0.1.0"
+
+    - id: "ATP018-STG005"
+      title: "Keycloak Development & SPI Customization"
+      description: "Service provider interfaces, custom authenticators, custom event listeners, and theme customization with FreeMarker."
+      weight: 15
+      maturity: draft
+      content:
+        - ref: ATS092
+          repository: "https://github.com/astrona-io/ATS092"
+          path: "."
+          version: "0.1.0"
+
+    - id: "ATP018-STG006"
+      title: "Production Operations, Security & Kubernetes"
+      description: "The Keycloak Operator, Infinispan distributed caching, the database, TLS termination at a reverse proxy, rate limiting, and backup and restore."
+      weight: 15
+      maturity: draft
+      content:
+        - ref: ATS093
+          repository: "https://github.com/astrona-io/ATS093"
+          path: "."
+          version: "0.1.0"
