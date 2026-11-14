@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://astrona.io/courses/keycloak">
+    <img src="https://astrona.io/courses/keycloak/banner.svg" alt="Keycloak: course domains on Astrona" width="100%">
+  </a>
+</p>
+
 # ATP018 — Keycloak
 
 An Astrona **training path**: a course track that groups training series
